@@ -36,9 +36,11 @@ def index(request):
             excel_data.append(row_data)
             print(row_data[0])
             print(row_data[1])
+            print(row_data)
+            print(type(row_data[1]))
 
             name = (row_data[0])
-            phone = int((row_data[1]))
+            phone = (row_data[1])
 
             # sending the messages
             username = "testjoe"
@@ -51,8 +53,8 @@ def index(request):
             sms = africastalking.SMS
 
             # Define some options to send the SMS
-            recipients = ['+254719828205']
-            message = 'I\'m {name}, and am all cool at night and I work all day at day'
+            recipients = [phone]
+            message = 'I\'m {"name"}, and am all cool at night and I work all day at day'
             sender = '33334'
 
             # Send the SMS
