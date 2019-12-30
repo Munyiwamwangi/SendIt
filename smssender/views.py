@@ -33,9 +33,9 @@ def index(request):
             excel_data.append(row_data)
             print(row_data[0])
             print(row_data[1])
-            print(row_data)
             print(type(row_data[0]))
             print(type(row_data[1]))
+            print(row_data)
 
             name = (row_data[0])
             phone = (row_data[1])
@@ -52,7 +52,7 @@ def index(request):
 
             # Define some options to send the SMS
             recipients = [phone]
-            message = 'I\'m {name}, and am all cool at night and I work all day at day'
+            message = f'Hey {name}, and am all cool all day and all night'
             # sender = '33334'
 
             # Send the SMS
