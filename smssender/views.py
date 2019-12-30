@@ -24,19 +24,17 @@ def index(request):
 
         excel_data = list()
         # iterating over the rows and
-        # getting value from each cell in row and printing it
+        # getting value from each cell in row
         for row in worksheet.iter_rows():
             row_data = list()
             for cell in row:
-                # for every cell in a row, the first value is the name to be attached to the formatted string
-                # carrying the message, while the second value which is in the second cell of the row is the
-                # recipient at that particular instant
                 row_data.append(str(cell.value))
                 # print(cell.value)
             excel_data.append(row_data)
             print(row_data[0])
             print(row_data[1])
             print(row_data)
+            print(type(row_data[0]))
             print(type(row_data[1]))
 
             name = (row_data[0])
@@ -44,7 +42,7 @@ def index(request):
 
             # sending the messages
             username = "testjoe"
-            apikey = "065ce0c2c30f8bc4a3b038a2935b59b6b1baac0e8fd4a5d3103f7fb6149773ea"
+            apikey = "06d9a470c343c22736180a35024919857798173f77c6629447344398a21495ca"
 
             # Initialize the SDK
             africastalking.initialize(username, apikey)
@@ -54,15 +52,15 @@ def index(request):
 
             # Define some options to send the SMS
             recipients = [phone]
-            message = 'I\'m {"name"}, and am all cool at night and I work all day at day'
-            sender = '33334'
+            message = 'I\'m {name}, and am all cool at night and I work all day at day'
+            # sender = '33334'
 
             # Send the SMS
             try:
                 # Once this is done, that's it! We'll handle the rest
-                response = sms.send(message, recipients, sender)
+                response = sms.send(message, recipients)
                 print(response)
             except Exception as e:
-                print(f"yoh cute ass nigger, we have a problem {e}")
+                print(f"yoh bad ass nigger, we have a problem {e}")
 
         return render(request, 'smssender/index.html', {"excel_data": excel_data})
