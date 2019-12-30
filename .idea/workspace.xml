@@ -15,7 +15,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VeYoX1LgAO8dnk6z1BnVrSR0lL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,6 +90,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1577651646098">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577651646098" />
     <state width="1345" height="218" key="GridCell.Tab.0.bottom" timestamp="1577644809549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -101,6 +110,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1577644809549" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1577651657517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1577651657517" />
     <state x="378" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1577615361687">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

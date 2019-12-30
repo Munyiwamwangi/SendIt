@@ -19,7 +19,8 @@ def index(request):
         print(worksheet)
 
         # reading a cell
-        print(worksheet["A2"].value)
+        # print(worksheet["A1"].value)
+        # print(worksheet["B1"].value)
 
         excel_data = list()
         # iterating over the rows and
@@ -27,9 +28,17 @@ def index(request):
         for row in worksheet.iter_rows():
             row_data = list()
             for cell in row:
+                # for every cell in a row, the first value is the name to be attached to the formatted string
+                # carrying the message, while the second value which is in the second cell of the row is the
+                # recipient at that particular instant
                 row_data.append(str(cell.value))
-                print(cell.value)
+                # print(cell.value)
             excel_data.append(row_data)
+            print(row_data[0])
+            print(row_data[1])
+
+            name = (row_data[0])
+            phone = int((row_data[1]))
 
             # sending the messages
             username = "testjoe"
@@ -43,7 +52,7 @@ def index(request):
 
             # Define some options to send the SMS
             recipients = ['+254719828205']
-            message = 'I\'m all cool at night and I work all day at day'
+            message = 'I\'m {name}, and am all cool at night and I work all day at day'
             sender = '33334'
 
             # Send the SMS
